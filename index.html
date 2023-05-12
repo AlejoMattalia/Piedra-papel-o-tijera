@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+
+    <title>Piedra, Papel o Tijera | Alejo Mattalia</title>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <main class="general">
+        <h1>PIEDRA, PAPEL o TIJERA</h1>
+        <img src="img/pizarra.avif" alt="pizarra" class="img-pizarra">
+
+        <section class="reglas">
+            <h2 class="titulo--reglas">REGLAS</h2>
+
+            <ul class="lista--reglas">
+                <li>
+                    El juego se juega entre dos jugadores, en el que cada jugador debe elegir una de las tres opciones
+                    posibles: piedra, papel o tijera.
+                </li>
+                <li>
+                    La piedra vence a las tijeras (la piedra las rompe), las tijeras vencen al papel (las tijeras lo
+                    cortan) y el papel vence a la piedra (el papel lo envuelve).
+                </li>
+                <li>
+                    Si ambos jugadores eligen la misma opción, el resultado es un empate y se juega otra ronda.
+                </li>
+                <li>
+                    El juego se juega en rondas, y el jugador que gana más rondas es el ganador del juego.
+                </li>
+                <li>
+                    El juego lo gana el mejor de 3 rondas.
+                </li>
+            </ul>
+
+            <p class="jugar">JUGAR</p>
+        </section>
+
+        <section class="seccionNombre">
+            <h3>DIGITE TU NOMBRE</h3>
+            <form action="" id="formulario">
+                <input type="text" id="nombreInput">
+            </form>
+            <p class="siguiente">Siguiente</p>
+        </section>
+
+        <section class="partida">
+            <div class="imagenes--p-p-t">
+                <h2>Selecciona una opción</h2>
+
+                <div class="contenedorJuego" id="piedra">
+                    <img class="juego" src="img/piedra.png" alt="piedra">
+                </div>
+                <p class="eleccion piedra">Piedra</p>
+
+                <div class="contenedorJuego" id="papel">
+                    <img class="juego" src="img/papel.png" alt="papel">
+                </div>
+                <p class="eleccion papel">Papel</p>
+
+                <div class="contenedorJuego" id="tijera">
+                    <img class="juego" src="img/tijera.png" alt="tijera">
+                </div>
+                <p class="eleccion tijera">Tijera</p>
+            </div>
+
+            <div class="contenedor-contador">
+                <h3>Ronda <span id="rondas">1</span></h3>
+                <p><span class="nombreUsuarioContador">Usuario</span>: <span class="contadorUsuario">0</span></p>
+                <p>Computadora: <span class="contadorPC">0</span></p>
+            </div>
+
+            <div class="contenedor-contador--victorias">
+                <h3>Partida <span id="partidas">1</span></h3>
+                <p><span class="nombreUsuarioPartida">Usuario</span>: <span class="contadorUsuarioPart">0</span></p>
+                <p>Computadora: <span class="contadorUsuarioPC">0</span></p>
+            </div>
+
+            <div class="finPartida">
+                <h3>FIN DE LA PARTIDA</h3>
+                <p class="finPartidaVerResltados">Ver resultados</p>
+            </div>
+        </section>
+
+        <section class="resultado--final">
+            <div class="contenedor-us-com">
+                <p class="us-com nombreUsuarioResultado">Usuario</p>
+                <p class="us-com PCResultado">Computadora</p>
+            </div>
+
+            <div class="img-us-com">
+                <div class="contenedorJuego contenedorJuego--usuario"></div>
+                <p class="vs">VS</p>
+                <div class="contenedorJuego contenedorJuego-PC"></div>
+            </div>
+            <div class="nombreObjetos">
+                <p class="objetoUno">Tijera</p>
+                <p class="objetoDos">Piedra</p>
+            </div>
+            <div class="gan--sigRonda">
+                <p class="resultado" id="resultado">GANASTE🎉🎉</p>
+                <p class="sigRonda">SIGUIENTE RONDA</p>
+            </div>
+        </section>
+
+        <section class="mostrarResultados">
+            <h3 class="titulo--mostrarResultados">Resultados</h3>
+
+            <p class="texto--mostrarResultados"><span class="nombreUsuarioMostrarResultado">Usuario</span>: <span class="contadorUsuario--mostrarResultados">0</span>
+                rondas ganadas</p>
+            <p class="texto--mostrarResultados">Computadora: <span class="contadorPC--mostrarResultados">0</span> rondas
+                ganadas</p>
+
+            <p class="jugarDeNuevo">Jugar de nuevo</p>
+        </section>
+    </main>
+</body>
+
+</html>
