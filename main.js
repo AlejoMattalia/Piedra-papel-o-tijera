@@ -25,6 +25,7 @@ const contenedorJuegoResultado = document.querySelector(".contenedorJuego--usuar
 const contenedorJuegoPC = document.querySelector(".contenedorJuego-PC");
 
 const resultadoPantalla = document.querySelector("#resultado");
+const PCResultado = document.querySelector(".PCResultado");
 const objetoUno = document.querySelector(".objetoUno");
 const objetoDos = document.querySelector(".objetoDos");
 
@@ -152,6 +153,22 @@ const seccionGanadorFuncion = () => {
         element.addEventListener("click", () => {
             nombreUsuarioResultado.innerHTML = "";
             nombreUsuarioResultado.innerHTML = nombre;
+       
+            if(nombreUsuarioResultado.innerHTML.length >= 10){
+                console.log("HOLA")
+                PCResultado.style.left = "5px";
+            }
+
+            else if((nombreUsuarioResultado.innerHTML.length >= 8) && (nombreUsuarioResultado.innerHTML.length < 10)){
+                PCResultado.style.left = "20px";
+            }
+            else if((nombreUsuarioResultado.innerHTML.length >= 5) && (nombreUsuarioResultado.innerHTML.length < 8)){
+                PCResultado.style.left = "45px";
+            }
+            else{
+                PCResultado.style.left = "75px";
+            }
+
             id = element.id;
             seccionJuego.style.opacity = 0;
             seccionGanador.style.opacity = 1;

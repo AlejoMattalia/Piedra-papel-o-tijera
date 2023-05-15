@@ -219,7 +219,7 @@ h2 {
 .contenedor-contador {
     position: absolute;
     top: 440px;
-    right: 850px;
+    right: 840px;
 }
 
 .contenedor-contador--victorias {
@@ -282,7 +282,7 @@ p {
 
 .PCResultado{
     position: relative;
-    left: 45px;
+    left: 30px;
 }
 
 .img-us-com{
